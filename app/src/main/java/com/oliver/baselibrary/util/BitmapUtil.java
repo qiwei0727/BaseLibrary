@@ -1,4 +1,4 @@
-package com.oliver.baselibrary.Util;
+package com.oliver.baselibrary.util;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
