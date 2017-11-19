@@ -79,6 +79,11 @@ public class AppUtils {
         }
     }
 
+    /**
+     * 安装apk
+     * @param context
+     * @param filePath
+     */
     public static void installAPK(Context context, String filePath) {
         File apkfile = new File(filePath);
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -87,6 +92,19 @@ public class AppUtils {
                 .toString()), "application/vnd.android" +
                 ".package-archive");
 
+        context.startActivity(intent);
+    }
+
+    /**
+     * 安装apk
+     * @param context
+     * @param t
+     */
+    public static void installAPK(Context context, File t) {
+        Intent intent = new Intent();
+        intent.setAction("android.intent.action.INSTALL_PACKAGE");
+        intent.addCategory("android.intent.category.DEFAULT");
+        intent.setDataAndType(Uri.fromFile(t), "application/vnd.android.package-archive");
         context.startActivity(intent);
     }
 
