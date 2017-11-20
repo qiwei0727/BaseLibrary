@@ -1,6 +1,4 @@
-package com.oliver.baselibrary.base;  /**
- * 日志输出标志
- **/
+package com.oliver.baselibrary.base;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +10,10 @@ import android.view.View;
 
 
 public abstract class BaseActivity extends AppCompatActivity {
+
+    /**
+     * 日志输出标志
+     **/
     protected final String TAG = this.getClass().getSimpleName();
 
     @Override

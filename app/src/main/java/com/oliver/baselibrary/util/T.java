@@ -1,6 +1,6 @@
 package com.oliver.baselibrary.util;
 
-import android.content.Context;
+import android.app.Activity;
 import android.widget.Toast;
 
 /**
@@ -13,16 +13,27 @@ import android.widget.Toast;
 public class T {
     private static Toast toast;
 
-    public static void showToast(Context context,
-                                 String content) {
+    public static void showToast(final Activity context,
+                                 final String message) {
         if (toast == null) {
             toast = Toast.makeText(context,
-                    content,
+                    message,
                     Toast.LENGTH_SHORT);
         } else {
-            toast.setText(content);
+            toast.setText(message);
         }
-        toast.show();
+
+        //在主线程
+        if ("main".equals(Thread.currentThread().getName())) {
+            toast.show();
+        } else {
+            context.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    toast.show();
+                }
+            });
+        }
     }
 
 }
