@@ -7,7 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.telephony.TelephonyManager;
 
-import com.oliver.baselibrary.base.BaseApplication;
+import com.oliver.base.base.BaseApplication;
 
 import java.io.File;
 

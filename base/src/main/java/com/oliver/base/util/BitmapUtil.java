@@ -6,7 +6,7 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 
-import com.oliver.baselibrary.base.BaseApplication;
+import com.oliver.base.base.BaseApplication;
 
 import java.lang.ref.WeakReference;
 
