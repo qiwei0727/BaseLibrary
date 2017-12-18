@@ -15,7 +15,7 @@ import java.util.Stack;
 
 public class BaseApplication extends Application {
     private static BaseApplication mBaseApplication;
-    private static Stack<Activity> mActivityStack;
+    private static Stack<Activity> mActivityStack= new Stack<>();
 
     /**
      * 获取当前Application
@@ -29,8 +29,6 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mBaseApplication = this;
-
-        mActivityStack = new Stack<>();
 
         //监听activity的生命周期
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {

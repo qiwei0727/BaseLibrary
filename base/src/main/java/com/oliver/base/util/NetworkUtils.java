@@ -10,8 +10,8 @@ import android.net.NetworkInfo;
 /**
  * 功能：检查网络连接状态
  */
-public class NetUtils {
-    private NetUtils() {
+public class NetworkUtils {
+    private NetworkUtils() {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }
