@@ -7,6 +7,6 @@
 
 ```
 dependencies {
-	        compile 'com.github.qiwei0727:BaseLibrary:v1.3.0'
+	compile 'com.github.qiwei0727:BaseLibrary:v1.3.0'
 }
 ```
