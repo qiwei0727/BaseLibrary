@@ -2,34 +2,34 @@
 抽取Android开发常用代码
 
 ## 目前主要有以下几个功能
-#### 1. base
+### 1. base
 
 几个UI的基类
 
-#### 2. cache
+### 2. cache
 
 DiskLruCache
 使用DiskLruCacheHelper进行调用
-#### 3. dialog
+### 3. dialog
 
 BaseDialog
-#### 4. eventbus
+### 4. eventbus
 
 EventBusManager
-#### 5. io
+### 5. io
 
-#### 6. net
+### 6. net
 
 okhttp封装
 
 使用HttpUtils
-#### 7. permission
+### 7. permission
 
 MPermission
-#### 8. util
+### 8. util
 
 一些常用工具
-#### 9. view
+### 9. view
 
 BadgeView
 
